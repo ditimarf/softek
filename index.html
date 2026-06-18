@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softek — Landing Pages que Convertem Visitantes em Clientes</title>
+    <meta name="description" content="Softek cria landing pages profissionais, rápidas e otimizadas para SEO. Converta mais visitantes em clientes com design estratégico.">
+    <link rel="canonical" href="https://softek.site">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Softek — Landing Pages que Convertem">
+    <meta property="og:description" content="Landing pages profissionais, rápidas e otimizadas para SEO. Converta mais visitantes em clientes.">
+    <meta property="og:url" content="https://softek.site">
+    <meta property="og:image" content="https://softek.site/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Softek — Landing Pages que Convertem">
+    <meta name="twitter:description" content="Landing pages profissionais, rápidas e otimizadas para SEO.">
+    <meta name="twitter:image" content="https://softek.site/images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Theme — evita flash de tema errado -->
+    <script>
+        (function() {
+            const saved = localStorage.getItem('softek-theme');
+            if (saved) {
+                document.documentElement.setAttribute('data-theme', saved);
+            } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Softek",
+        "url": "https://softek.site",
+        "description": "Criação de landing pages profissionais e otimizadas para conversão.",
+        "image": "https://softek.site/images/logo.jpg",
+        "email": "contato@softek.site",
+        "priceRange": "$$",
+        "areaServed": "BR",
+        "serviceType": "Web Design e Desenvolvimento de Landing Pages"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Softek - Início">
+                <img src="images/logo.jpg" alt="Softek Logo" width="40" height="40">
+                <span class="logo-text">Softek</span>
+            </a>
+            <nav class="nav" id="nav" aria-label="Navegação principal">
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#portfolio" class="nav-link">Portfólio</a>
+                <a href="#processo" class="nav-link">Processo</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                <i data-lucide="sun" class="icon theme-icon-sun"></i>
+                <i data-lucide="moon" class="icon theme-icon-moon"></i>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <i data-lucide="menu" class="icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Landing Pages que <span class="gradient-text">Convertem</span> Visitantes em Clientes
+                </h1>
+                <p class="hero-subtitle">
+                    Criamos páginas de alta performance, com design estratégico e otimização para SEO.
+                    Sua empresa merece uma presença digital que gera resultados reais.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contato" class="btn btn-primary btn-lg">Quero minha landing page</a>
+                    <a href="#portfolio" class="btn btn-outline btn-lg">Ver portfólio</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">+50</span>
+                    <span class="stat-label">Projetos entregues</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Clientes satisfeitos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3x</span>
+                    <span class="stat-label">Mais conversão</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- Social Proof / Logos -->
+    <section class="section section-sm">
+        <div class="container">
+            <p class="section-subtitle text-center">Empresas que confiam na Softek</p>
+            <div class="logos-row">
+                <div class="logo-item"><span class="logo-placeholder">TechFlow</span></div>
+                <div class="logo-item"><span class="logo-placeholder">NexDigital</span></div>
+                <div class="logo-item"><span class="logo-placeholder">InovaTech</span></div>
+                <div class="logo-item"><span class="logo-placeholder">PrimeSys</span></div>
+                <div class="logo-item"><span class="logo-placeholder">DataCore</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema → Solução -->
+    <section class="section" id="problema">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="problem-card">
+                    <div class="card-icon">
+                        <i data-lucide="alert-triangle" class="icon"></i>
+                    </div>
+                    <h2 class="card-title">Seu site atual não converte?</h2>
+                    <ul class="problem-list">
+                        <li><i data-lucide="x-circle" class="icon-sm"></i> Páginas lentas que espantam visitantes</li>
+                        <li><i data-lucide="x-circle" class="icon-sm"></i> Design confuso sem foco em resultado</li>
+                        <li><i data-lucide="x-circle" class="icon-sm"></i> Sem otimização para Google (SEO)</li>
+                        <li><i data-lucide="x-circle" class="icon-sm"></i> Não funciona bem no celular</li>
+                        <li><i data-lucide="x-circle" class="icon-sm"></i> Nenhuma estratégia de captura de leads</li>
+                    </ul>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon accent">
+                        <i data-lucide="check-circle" class="icon"></i>
+                    </div>
+                    <h2 class="card-title">A solução Softek</h2>
+                    <ul class="solution-list">
+                        <li><i data-lucide="zap" class="icon-sm accent"></i> <strong>Performance máxima</strong> — carregamento em menos de 2 segundos</li>
+                        <li><i data-lucide="layout" class="icon-sm accent"></i> <strong>Design estratégico</strong> — cada elemento guia para a conversão</li>
+                        <li><i data-lucide="search" class="icon-sm accent"></i> <strong>SEO otimizado</strong> — encontrado no Google organicamente</li>
+                        <li><i data-lucide="smartphone" class="icon-sm accent"></i> <strong>100% responsivo</strong> — perfeito em qualquer dispositivo</li>
+                        <li><i data-lucide="target" class="icon-sm accent"></i> <strong>Foco em leads</strong> — formulários e CTAs que funcionam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section section-alt" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Nossos Serviços</p>
+                <h2 class="section-title">Tudo que sua landing page precisa</h2>
+                <p class="section-desc">Do conceito à publicação, cuidamos de cada detalhe para entregar uma página que gera resultados.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="palette" class="icon"></i>
+                    </div>
+                    <h3 class="service-title">Design Profissional</h3>
+                    <p class="service-desc">Interface moderna, minimalista e alinhada à identidade da sua marca. Cores, tipografia e espaçamento pensados para guiar o olhar do visitante.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="pen-tool" class="icon"></i>
+                    </div>
+                    <h3 class="service-title">Copywriting Estratégico</h3>
+                    <p class="service-desc">Textos persuasivos que comunicam valor, resolvem objeções e incentivam a ação. Cada palavra posicionada para converter.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="code-2" class="icon"></i>
+                    </div>
+                    <h3 class="service-title">Desenvolvimento & SEO</h3>
+                    <p class="service-desc">Código limpo, semântico e otimizado. Performance impecável, indexação perfeita no Google e compatibilidade total.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Portfólio</p>
+                <h2 class="section-title">Landing pages que entregamos</h2>
+                <p class="section-desc">Cada projeto é único, mas todos compartilham um objetivo: converter visitantes em clientes.</p>
+            </div>
+            <div class="grid grid-3">
+                <!-- TechFlow — SaaS realista -->
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb">
+                        <div class="real-site real-saas">
+                            <div class="real-nav">
+                                <span class="real-logo">TechFlow</span>
+                                <span class="real-navlinks">
+                                    <em></em><em></em><em></em>
+                                </span>
+                                <span class="real-navbtn">Login</span>
+                            </div>
+                            <div class="real-saas-hero">
+                                <h4 class="real-h4">Automatize seu workflow</h4>
+                                <p class="real-p">A plataforma que escala sua operação sem complicação.</p>
+                                <span class="real-herocta">Começar teste grátis</span>
+                                <div class="real-dash-wrap">
+                                    <div class="real-dash">
+                                        <div class="real-dash-sidebar">
+                                            <em></em><em></em><em></em><em></em><em></em>
+                                        </div>
+                                        <div class="real-dash-body">
+                                            <div class="real-dash-top">
+                                                <span class="real-kpi"></span>
+                                                <span class="real-kpi"></span>
+                                                <span class="real-kpi"></span>
+                                            </div>
+                                            <div class="real-dash-chart">
+                                                <svg viewBox="0 0 180 50" preserveAspectRatio="none">
+                                                    <polyline points="0,45 30,35 60,38 90,20 120,25 150,10 180,15" fill="none" stroke="#38bdf8" stroke-width="2"/>
+                                                    <polyline points="0,40 30,30 60,33 90,18 120,22 150,8 180,12" fill="none" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 4"/>
+                                                </svg>
+                                            </div>
+                                            <div class="real-dash-table">
+                                                <em></em><em></em><em></em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">SaaS</span>
+                            <h3 class="portfolio-title">TechFlow</h3>
+                            <p class="portfolio-desc">+180% em conversão de trial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NexDigital — E-commerce realista -->
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb portfolio-2">
+                        <div class="real-site real-loja">
+                            <div class="real-nav">
+                                <span class="real-logo">NexDigital</span>
+                                <span class="real-search">
+                                    <em></em>
+                                </span>
+                                <span class="real-cartbtn">🛒 2</span>
+                            </div>
+                            <div class="real-loja-hero">
+                                <div class="real-loja-promo">
+                                    <span class="real-badge">-30%</span>
+                                    <h4 class="real-h4">Fones Pro X1</h4>
+                                    <p class="real-p">Cancelamento ativo de ruído. Som de estúdio.</p>
+                                    <span class="real-preco">R$ 299 <s>R$ 429</s></span>
+                                    <span class="real-herocta">Comprar agora</span>
+                                </div>
+                                <div class="real-prod-img"></div>
+                            </div>
+                            <div class="real-loja-grid">
+                                <div class="real-loja-prod">
+                                    <div class="real-loja-thumb"></div>
+                                    <span class="real-loja-name">Smart Watch</span>
+                                    <span class="real-loja-val">R$ 459</span>
+                                </div>
+                                <div class="real-loja-prod">
+                                    <div class="real-loja-thumb"></div>
+                                    <span class="real-loja-name">Caixa JBL</span>
+                                    <span class="real-loja-val">R$ 189</span>
+                                </div>
+                                <div class="real-loja-prod">
+                                    <div class="real-loja-thumb"></div>
+                                    <span class="real-loja-name">Power Bank</span>
+                                    <span class="real-loja-val">R$ 129</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">E-commerce</span>
+                            <h3 class="portfolio-title">NexDigital</h3>
+                            <p class="portfolio-desc">+45% em taxa de checkout</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PrimeSys — Consultoria realista -->
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb portfolio-3">
+                        <div class="real-site real-consult">
+                            <div class="real-nav">
+                                <span class="real-logo">PrimeSys</span>
+                                <span class="real-navlinks">
+                                    <em></em><em></em><em></em>
+                                </span>
+                                <span class="real-navbtn real-navbtn-light">Fale conosco</span>
+                            </div>
+                            <div class="real-consult-hero">
+                                <div class="real-consult-left">
+                                    <h4 class="real-h4">Consultoria que transforma resultados</h4>
+                                    <p class="real-p">Estratégia, tecnologia e execução para o crescimento da sua empresa.</p>
+                                    <span class="real-herocta real-herocta-dark">Agendar reunião</span>
+                                </div>
+                                <div class="real-consult-right">
+                                    <div class="real-cliente-card">
+                                        <div class="real-cliente-foto"></div>
+                                        <div class="real-cliente-dados">
+                                            <strong>Ana Costa</strong>
+                                            <span>CEO · TechVille</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="real-servicos-bar">
+                                <div class="real-sv">
+                                    <div class="real-sv-icone"></div>
+                                    <span class="real-sv-tit">Estratégia</span>
+                                </div>
+                                <div class="real-sv">
+                                    <div class="real-sv-icone"></div>
+                                    <span class="real-sv-tit">Tecnologia</span>
+                                </div>
+                                <div class="real-sv">
+                                    <div class="real-sv-icone"></div>
+                                    <span class="real-sv-tit">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Consultoria</span>
+                            <h3 class="portfolio-title">PrimeSys</h3>
+                            <p class="portfolio-desc">+60 leads no primeiro mês</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo -->
+    <section class="section section-alt" id="processo">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Como Funciona</p>
+                <h2 class="section-title">Do briefing à publicação</h2>
+                <p class="section-desc">Processo enxuto e transparente. Você acompanha cada etapa.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i data-lucide="message-square" class="icon"></i></div>
+                    <h3 class="step-title">Briefing & Estratégia</h3>
+                    <p class="step-desc">Entendemos seu negócio, público-alvo e objetivos. Definimos a mensagem central e a jornada do visitante.</p>
+                </div>
+                <div class="step-arrow"><i data-lucide="arrow-right" class="icon"></i></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i data-lucide="figma" class="icon"></i></div>
+                    <h3 class="step-title">Design & Aprovação</h3>
+                    <p class="step-desc">Criamos o layout visual com foco em conversão. Você revisa e aprovamos juntos antes do desenvolvimento.</p>
+                </div>
+                <div class="step-arrow"><i data-lucide="arrow-right" class="icon"></i></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i data-lucide="rocket" class="icon"></i></div>
+                    <h3 class="step-title">Desenvolvimento & Publicação</h3>
+                    <p class="step-desc">Código limpo, otimizado e testado. Publicamos e entregamos pronto para capturar leads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Depoimentos</p>
+                <h2 class="section-title">O que dizem nossos clientes</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"A Softek transformou nossa presença online. A landing page entregue triplicou nossos leads qualificados no primeiro mês."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RM</div>
+                        <div class="author-info">
+                            <strong>Rafael Mendes</strong>
+                            <span>CEO, TechFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"Processo rápido, comunicação clara e resultado acima do esperado. A página carrega em instantes e já aparece no Google."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CS</div>
+                        <div class="author-info">
+                            <strong>Camila Souza</strong>
+                            <span>Marketing, NexDigital</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                        <i data-lucide="star" class="icon star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"Investimento que se pagou em duas semanas. Design profissional, código limpo e a equipe entregou antes do prazo."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LO</div>
+                        <div class="author-info">
+                            <strong>Lucas Oliveira</strong>
+                            <span>Fundador, PrimeSys</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+        <div class="container container-sm">
+            <div class="section-header">
+                <p class="section-label">Dúvidas Frequentes</p>
+                <h2 class="section-title">FAQ</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Quanto tempo leva para criar uma landing page?</span>
+                        <i data-lucide="plus" class="icon faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O prazo médio é de 5 a 10 dias úteis, dependendo da complexidade. Trabalhamos com processo enxuto: briefing, design, aprovação e publicação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Vocês também fazem o texto/copy da página?</span>
+                        <i data-lucide="plus" class="icon faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! O copywriting estratégico faz parte do nosso serviço. Criamos textos persuasivos que comunicam valor e guiam o visitante para a ação desejada.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>A landing page vai aparecer no Google?</span>
+                        <i data-lucide="plus" class="icon faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Todo nosso código é semântico e otimizado para SEO. Incluímos meta tags estruturadas, Schema.org, performance impecável e conteúdo indexável.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>É possível editar a página depois de pronta?</span>
+                        <i data-lucide="plus" class="icon faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Entregamos o código fonte completo e documentado. Se preferir, oferecemos planos de manutenção para atualizações futuras sem complicação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Como funciona o pagamento?</span>
+                        <i data-lucide="plus" class="icon faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Trabalhamos com 50% no início do projeto e 50% na entrega. Aceitamos PIX, transferência bancária e cartão de crédito via link de pagamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contato -->
+    <section class="section cta-section" id="contato">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-info">
+                    <h2 class="cta-title">Vamos criar sua landing page?</h2>
+                    <p class="cta-desc">Preencha o formulário ou fale diretamente conosco. Respondemos em até 24h.</p>
+                    <div class="cta-contact">
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="icon"></i>
+                            <span>contato@softek.site</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone" class="icon"></i>
+                            <span>(71) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="icon"></i>
+                            <span>Salvador, BA — Atendimento remoto para todo o Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefone / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Conte um pouco sobre seu projeto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Solicitar orçamento grátis</button>
+                        <p class="form-note"><i data-lucide="lock" class="icon-sm"></i> Seus dados estão seguros. Não enviamos spam.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cta-glow"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="images/logo.jpg" alt="Softek Logo" width="32" height="32">
+                        <span class="logo-text">Softek</span>
+                    </a>
+                    <p class="footer-desc">Landing pages profissionais que convertem visitantes em clientes.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram" class="icon"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" class="icon"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle" class="icon"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Links</h4>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#processo">Processo</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Contato</h4>
+                    <a href="mailto:contato@softek.site">contato@softek.site</a>
+                    <a href="tel:+5571999999999">(71) 99999-9999</a>
+                    <span>Salvador, BA</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Softek. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
