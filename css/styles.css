@@ -274,6 +274,7 @@ ul { list-style: none; }
     align-items: center;
     justify-content: space-between;
     height: 72px;
+    gap: 16px;
 }
 
 .logo {
@@ -1362,7 +1363,7 @@ ul { list-style: none; }
 .cta-section {
     position: relative;
     overflow: hidden;
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     border-top: 1px solid var(--border);
 }
 
@@ -1420,66 +1421,74 @@ ul { list-style: none; }
     flex-shrink: 0;
 }
 
-/* ---------- Formulário ---------- */
-.cta-form-wrapper {
+/* ---------- WhatsApp Card ---------- */
+.cta-whatsapp-wrapper {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     padding: 40px;
 }
 
-.contact-form {
+.whatsapp-card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
 }
 
-.form-label {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 6px;
-}
-
-.form-input {
-    width: 100%;
-    padding: 12px 16px;
-    background: var(--bg-input);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    color: var(--text-primary);
-    font-size: 0.95rem;
-    transition: var(--transition);
-}
-
-.form-input::placeholder {
-    color: var(--text-muted);
-}
-
-.form-input:focus {
-    outline: none;
-    border-color: var(--accent-cyan);
-    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
-}
-
-.form-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.form-note {
+.whatsapp-card-icon {
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
-    gap: 6px;
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: 4px;
+    justify-content: center;
+    background: rgba(37, 211, 102, 0.1);
+    border-radius: 50%;
 }
 
-.form-note .icon-sm {
-    width: 14px;
-    height: 14px;
+.whatsapp-card-icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.whatsapp-card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.whatsapp-card-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.whatsapp-card-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    filter: brightness(1.05);
+}
+
+.btn-whatsapp svg {
+    width: 20px;
+    height: 20px;
 }
 
 /* ---------- Footer ---------- */
@@ -1501,8 +1510,10 @@ ul { list-style: none; }
 }
 
 .footer-brand .logo img {
-    width: 32px;
-    height: 32px;
+    width: auto;
+    height: 96px;
+    max-width: 320px;
+    object-fit: contain;
 }
 
 .footer-desc {
@@ -1540,6 +1551,35 @@ ul { list-style: none; }
 .footer-social .icon {
     width: 18px;
     height: 18px;
+}
+
+.footer-social .social-instagram,
+.footer-social .social-whatsapp {
+    width: 44px;
+    height: 44px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.footer-social .social-instagram:hover {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.1), rgba(244, 63, 94, 0.1), rgba(139, 92, 246, 0.1));
+    border-color: rgba(244, 63, 94, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(244, 63, 94, 0.2);
+}
+
+.footer-social .social-whatsapp:hover {
+    border-color: #25d366;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+}
+
+.footer-social .social-whatsapp svg,
+.footer-social .social-instagram svg {
+    width: 24px;
+    height: 24px;
 }
 
 .footer-title {
@@ -1593,6 +1633,25 @@ ul { list-style: none; }
 @media (max-width: 768px) {
     .header-inner {
         height: 64px;
+        grid-template-columns: auto 1fr auto;
+        gap: 12px;
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+        order: -1;
+        margin-right: auto;
+        padding-left: 0;
+    }
+
+    .theme-toggle {
+        order: 1;
+        margin-left: auto;
+        padding-right: 0;
     }
 
     .nav {
@@ -1673,7 +1732,7 @@ ul { list-style: none; }
         gap: 48px;
     }
 
-    .cta-form-wrapper {
+    .cta-whatsapp-wrapper {
         padding: 24px;
     }
 

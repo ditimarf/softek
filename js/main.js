@@ -159,50 +159,6 @@
         fadeObserver.observe(el);
     });
 
-    /* ---------- Formulário ---------- */
-    const form = document.getElementById('contactForm');
-
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const btn = form.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-
-            // Loading state
-            btn.textContent = 'Enviando...';
-            btn.disabled = true;
-
-            // Coletar dados
-            const data = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                message: document.getElementById('message').value,
-                date: new Date().toISOString()
-            };
-
-            // Simular envio (substituir por API real quando disponível)
-            setTimeout(() => {
-                console.log('Formulário enviado:', data);
-
-                // Sucesso
-                btn.textContent = 'Enviado com sucesso!';
-                btn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
-
-                // Limpar formulário
-                form.reset();
-
-                // Reset após 3s
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.disabled = false;
-                    btn.style.background = '';
-                }, 3000);
-            }, 1500);
-        });
-    }
-
     /* ---------- Ano atual no footer ---------- */
     const yearEl = document.getElementById('year');
     if (yearEl) {
