@@ -1617,6 +1617,12 @@ ul { list-style: none; }
     color: var(--text-muted);
 }
 
+.footer-cnpj {
+    margin-top: 4px;
+    font-family: ui-monospace, 'SF Mono', Monaco, monospace;
+    letter-spacing: 0.02em;
+}
+
 /* ---------- Animações ---------- */
 .fade-in {
     opacity: 0;
